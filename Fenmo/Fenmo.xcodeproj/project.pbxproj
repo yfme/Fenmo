@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* FenmoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* FenmoAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* FenmoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* FenmoViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* FenmoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* FenmoViewController.m */; };
+		CE48653112A23CC70075F323 /* score.caf in Resources */ = {isa = PBXBuildFile; fileRef = CE48652F12A23CC70075F323 /* score.caf */; };
+		CE48653212A23CC70075F323 /* move.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE48653012A23CC70075F323 /* move.wav */; };
+		CE48655812A23CD30075F323 /* game-over.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48653412A23CD30075F323 /* game-over.png */; };
+		CE48655912A23CD30075F323 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48653512A23CD30075F323 /* Icon.png */; };
+		CE48655A12A23CD30075F323 /* piece-0-0-0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48653612A23CD30075F323 /* piece-0-0-0.png */; };
+		CE48655B12A23CD30075F323 /* piece-0-0-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48653712A23CD30075F323 /* piece-0-0-1.png */; };
+		CE48655C12A23CD30075F323 /* piece-0-1-0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48653812A23CD30075F323 /* piece-0-1-0.png */; };
+		CE48655D12A23CD30075F323 /* piece-0-1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48653912A23CD30075F323 /* piece-0-1-1.png */; };
+		CE48655E12A23CD30075F323 /* piece-0-2-0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48653A12A23CD30075F323 /* piece-0-2-0.png */; };
+		CE48655F12A23CD30075F323 /* piece-0-2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48653B12A23CD30075F323 /* piece-0-2-1.png */; };
+		CE48656012A23CD30075F323 /* piece-1-0-0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48653C12A23CD30075F323 /* piece-1-0-0.png */; };
+		CE48656112A23CD30075F323 /* piece-1-0-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48653D12A23CD30075F323 /* piece-1-0-1.png */; };
+		CE48656212A23CD30075F323 /* piece-1-1-0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48653E12A23CD30075F323 /* piece-1-1-0.png */; };
+		CE48656312A23CD30075F323 /* piece-1-1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48653F12A23CD30075F323 /* piece-1-1-1.png */; };
+		CE48656412A23CD30075F323 /* piece-1-2-0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654012A23CD30075F323 /* piece-1-2-0.png */; };
+		CE48656512A23CD30075F323 /* piece-1-2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654112A23CD30075F323 /* piece-1-2-1.png */; };
+		CE48656612A23CD30075F323 /* piece-2-0-0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654212A23CD30075F323 /* piece-2-0-0.png */; };
+		CE48656712A23CD30075F323 /* piece-2-0-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654312A23CD30075F323 /* piece-2-0-1.png */; };
+		CE48656812A23CD30075F323 /* piece-2-1-0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654412A23CD30075F323 /* piece-2-1-0.png */; };
+		CE48656912A23CD30075F323 /* piece-2-1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654512A23CD30075F323 /* piece-2-1-1.png */; };
+		CE48656A12A23CD30075F323 /* piece-2-2-0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654612A23CD30075F323 /* piece-2-2-0.png */; };
+		CE48656B12A23CD30075F323 /* piece-2-2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654712A23CD30075F323 /* piece-2-2-1.png */; };
+		CE48656C12A23CD30075F323 /* progress-1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654812A23CD30075F323 /* progress-1.png */; };
+		CE48656D12A23CD30075F323 /* progress-10.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654912A23CD30075F323 /* progress-10.png */; };
+		CE48656E12A23CD30075F323 /* progress-11.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654A12A23CD30075F323 /* progress-11.png */; };
+		CE48656F12A23CD30075F323 /* progress-12.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654B12A23CD30075F323 /* progress-12.png */; };
+		CE48657012A23CD30075F323 /* progress-13.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654C12A23CD30075F323 /* progress-13.png */; };
+		CE48657112A23CD30075F323 /* progress-14.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654D12A23CD30075F323 /* progress-14.png */; };
+		CE48657212A23CD30075F323 /* progress-15.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654E12A23CD30075F323 /* progress-15.png */; };
+		CE48657312A23CD30075F323 /* progress-2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48654F12A23CD30075F323 /* progress-2.png */; };
+		CE48657412A23CD30075F323 /* progress-3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48655012A23CD30075F323 /* progress-3.png */; };
+		CE48657512A23CD30075F323 /* progress-4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48655112A23CD30075F323 /* progress-4.png */; };
+		CE48657612A23CD30075F323 /* progress-5.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48655212A23CD30075F323 /* progress-5.png */; };
+		CE48657712A23CD30075F323 /* progress-6.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48655312A23CD30075F323 /* progress-6.png */; };
+		CE48657812A23CD30075F323 /* progress-7.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48655412A23CD30075F323 /* progress-7.png */; };
+		CE48657912A23CD30075F323 /* progress-8.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48655512A23CD30075F323 /* progress-8.png */; };
+		CE48657A12A23CD30075F323 /* progress-9.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48655612A23CD30075F323 /* progress-9.png */; };
+		CE48657B12A23CD30075F323 /* tap-to-start.png in Resources */ = {isa = PBXBuildFile; fileRef = CE48655712A23CD30075F323 /* tap-to-start.png */; };
+		CE48658212A23D490075F323 /* FenmoGame.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48658112A23D490075F323 /* FenmoGame.m */; };
+		CE48659012A23DF10075F323 /* FenmoView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48658F12A23DF10075F323 /* FenmoView.m */; };
+		CE48659512A23E2B0075F323 /* FenmoTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48659412A23E2B0075F323 /* FenmoTimerView.m */; };
+		CE48659912A23F5A0075F323 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE48659812A23F5A0075F323 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* FenmoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenmoAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* FenmoAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenmoAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Fenmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fenmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* FenmoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FenmoViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* FenmoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenmoViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* FenmoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenmoViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Fenmo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fenmo_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Fenmo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fenmo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		CE48652F12A23CC70075F323 /* score.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = score.caf; sourceTree = "<group>"; };
+		CE48653012A23CC70075F323 /* move.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = move.wav; sourceTree = "<group>"; };
+		CE48653412A23CD30075F323 /* game-over.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game-over.png"; sourceTree = "<group>"; };
+		CE48653512A23CD30075F323 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CE48653612A23CD30075F323 /* piece-0-0-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-0-0-0.png"; sourceTree = "<group>"; };
+		CE48653712A23CD30075F323 /* piece-0-0-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-0-0-1.png"; sourceTree = "<group>"; };
+		CE48653812A23CD30075F323 /* piece-0-1-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-0-1-0.png"; sourceTree = "<group>"; };
+		CE48653912A23CD30075F323 /* piece-0-1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-0-1-1.png"; sourceTree = "<group>"; };
+		CE48653A12A23CD30075F323 /* piece-0-2-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-0-2-0.png"; sourceTree = "<group>"; };
+		CE48653B12A23CD30075F323 /* piece-0-2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-0-2-1.png"; sourceTree = "<group>"; };
+		CE48653C12A23CD30075F323 /* piece-1-0-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-1-0-0.png"; sourceTree = "<group>"; };
+		CE48653D12A23CD30075F323 /* piece-1-0-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-1-0-1.png"; sourceTree = "<group>"; };
+		CE48653E12A23CD30075F323 /* piece-1-1-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-1-1-0.png"; sourceTree = "<group>"; };
+		CE48653F12A23CD30075F323 /* piece-1-1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-1-1-1.png"; sourceTree = "<group>"; };
+		CE48654012A23CD30075F323 /* piece-1-2-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-1-2-0.png"; sourceTree = "<group>"; };
+		CE48654112A23CD30075F323 /* piece-1-2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-1-2-1.png"; sourceTree = "<group>"; };
+		CE48654212A23CD30075F323 /* piece-2-0-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-2-0-0.png"; sourceTree = "<group>"; };
+		CE48654312A23CD30075F323 /* piece-2-0-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-2-0-1.png"; sourceTree = "<group>"; };
+		CE48654412A23CD30075F323 /* piece-2-1-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-2-1-0.png"; sourceTree = "<group>"; };
+		CE48654512A23CD30075F323 /* piece-2-1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-2-1-1.png"; sourceTree = "<group>"; };
+		CE48654612A23CD30075F323 /* piece-2-2-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-2-2-0.png"; sourceTree = "<group>"; };
+		CE48654712A23CD30075F323 /* piece-2-2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piece-2-2-1.png"; sourceTree = "<group>"; };
+		CE48654812A23CD30075F323 /* progress-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-1.png"; sourceTree = "<group>"; };
+		CE48654912A23CD30075F323 /* progress-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-10.png"; sourceTree = "<group>"; };
+		CE48654A12A23CD30075F323 /* progress-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-11.png"; sourceTree = "<group>"; };
+		CE48654B12A23CD30075F323 /* progress-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-12.png"; sourceTree = "<group>"; };
+		CE48654C12A23CD30075F323 /* progress-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-13.png"; sourceTree = "<group>"; };
+		CE48654D12A23CD30075F323 /* progress-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-14.png"; sourceTree = "<group>"; };
+		CE48654E12A23CD30075F323 /* progress-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-15.png"; sourceTree = "<group>"; };
+		CE48654F12A23CD30075F323 /* progress-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-2.png"; sourceTree = "<group>"; };
+		CE48655012A23CD30075F323 /* progress-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-3.png"; sourceTree = "<group>"; };
+		CE48655112A23CD30075F323 /* progress-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-4.png"; sourceTree = "<group>"; };
+		CE48655212A23CD30075F323 /* progress-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-5.png"; sourceTree = "<group>"; };
+		CE48655312A23CD30075F323 /* progress-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-6.png"; sourceTree = "<group>"; };
+		CE48655412A23CD30075F323 /* progress-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-7.png"; sourceTree = "<group>"; };
+		CE48655512A23CD30075F323 /* progress-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-8.png"; sourceTree = "<group>"; };
+		CE48655612A23CD30075F323 /* progress-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-9.png"; sourceTree = "<group>"; };
+		CE48655712A23CD30075F323 /* tap-to-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap-to-start.png"; sourceTree = "<group>"; };
+		CE48658012A23D490075F323 /* FenmoGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenmoGame.h; sourceTree = "<group>"; };
+		CE48658112A23D490075F323 /* FenmoGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenmoGame.m; sourceTree = "<group>"; };
+		CE48658E12A23DF10075F323 /* FenmoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenmoView.h; sourceTree = "<group>"; };
+		CE48658F12A23DF10075F323 /* FenmoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenmoView.m; sourceTree = "<group>"; };
+		CE48659312A23E2B0075F323 /* FenmoTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FenmoTimerView.h; sourceTree = "<group>"; };
+		CE48659412A23E2B0075F323 /* FenmoTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FenmoTimerView.m; sourceTree = "<group>"; };
+		CE48659812A23F5A0075F323 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				CE48659912A23F5A0075F323 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* FenmoAppDelegate.h */,
+				1D3623250D0F684500981E51 /* FenmoAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* FenmoViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* FenmoViewController.m */,
+				CE48658012A23D490075F323 /* FenmoGame.h */,
+				CE48658112A23D490075F323 /* FenmoGame.m */,
+				CE48658E12A23DF10075F323 /* FenmoView.h */,
+				CE48658F12A23DF10075F323 /* FenmoView.m */,
+				CE48659312A23E2B0075F323 /* FenmoTimerView.h */,
+				CE48659412A23E2B0075F323 /* FenmoTimerView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Fenmo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Fenmo_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE48652F12A23CC70075F323 /* score.caf */,
+				CE48653012A23CC70075F323 /* move.wav */,
+				2899E5210DE3E06400AC0155 /* FenmoViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Fenmo-Info.plist */,
+				CE48653312A23CD30075F323 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				CE48659812A23F5A0075F323 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE48653312A23CD30075F323 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CE48653412A23CD30075F323 /* game-over.png */,
+				CE48653512A23CD30075F323 /* Icon.png */,
+				CE48653612A23CD30075F323 /* piece-0-0-0.png */,
+				CE48653712A23CD30075F323 /* piece-0-0-1.png */,
+				CE48653812A23CD30075F323 /* piece-0-1-0.png */,
+				CE48653912A23CD30075F323 /* piece-0-1-1.png */,
+				CE48653A12A23CD30075F323 /* piece-0-2-0.png */,
+				CE48653B12A23CD30075F323 /* piece-0-2-1.png */,
+				CE48653C12A23CD30075F323 /* piece-1-0-0.png */,
+				CE48653D12A23CD30075F323 /* piece-1-0-1.png */,
+				CE48653E12A23CD30075F323 /* piece-1-1-0.png */,
+				CE48653F12A23CD30075F323 /* piece-1-1-1.png */,
+				CE48654012A23CD30075F323 /* piece-1-2-0.png */,
+				CE48654112A23CD30075F323 /* piece-1-2-1.png */,
+				CE48654212A23CD30075F323 /* piece-2-0-0.png */,
+				CE48654312A23CD30075F323 /* piece-2-0-1.png */,
+				CE48654412A23CD30075F323 /* piece-2-1-0.png */,
+				CE48654512A23CD30075F323 /* piece-2-1-1.png */,
+				CE48654612A23CD30075F323 /* piece-2-2-0.png */,
+				CE48654712A23CD30075F323 /* piece-2-2-1.png */,
+				CE48654812A23CD30075F323 /* progress-1.png */,
+				CE48654912A23CD30075F323 /* progress-10.png */,
+				CE48654A12A23CD30075F323 /* progress-11.png */,
+				CE48654B12A23CD30075F323 /* progress-12.png */,
+				CE48654C12A23CD30075F323 /* progress-13.png */,
+				CE48654D12A23CD30075F323 /* progress-14.png */,
+				CE48654E12A23CD30075F323 /* progress-15.png */,
+				CE48654F12A23CD30075F323 /* progress-2.png */,
+				CE48655012A23CD30075F323 /* progress-3.png */,
+				CE48655112A23CD30075F323 /* progress-4.png */,
+				CE48655212A23CD30075F323 /* progress-5.png */,
+				CE48655312A23CD30075F323 /* progress-6.png */,
+				CE48655412A23CD30075F323 /* progress-7.png */,
+				CE48655512A23CD30075F323 /* progress-8.png */,
+				CE48655612A23CD30075F323 /* progress-9.png */,
+				CE48655712A23CD30075F323 /* tap-to-start.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Fenmo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Fenmo" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fenmo;
+			productName = Fenmo;
+			productReference = 1D6058910D05DD3D006BFB54 /* Fenmo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Fenmo" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Fenmo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* FenmoViewController.xib in Resources */,
+				CE48653112A23CC70075F323 /* score.caf in Resources */,
+				CE48653212A23CC70075F323 /* move.wav in Resources */,
+				CE48655812A23CD30075F323 /* game-over.png in Resources */,
+				CE48655912A23CD30075F323 /* Icon.png in Resources */,
+				CE48655A12A23CD30075F323 /* piece-0-0-0.png in Resources */,
+				CE48655B12A23CD30075F323 /* piece-0-0-1.png in Resources */,
+				CE48655C12A23CD30075F323 /* piece-0-1-0.png in Resources */,
+				CE48655D12A23CD30075F323 /* piece-0-1-1.png in Resources */,
+				CE48655E12A23CD30075F323 /* piece-0-2-0.png in Resources */,
+				CE48655F12A23CD30075F323 /* piece-0-2-1.png in Resources */,
+				CE48656012A23CD30075F323 /* piece-1-0-0.png in Resources */,
+				CE48656112A23CD30075F323 /* piece-1-0-1.png in Resources */,
+				CE48656212A23CD30075F323 /* piece-1-1-0.png in Resources */,
+				CE48656312A23CD30075F323 /* piece-1-1-1.png in Resources */,
+				CE48656412A23CD30075F323 /* piece-1-2-0.png in Resources */,
+				CE48656512A23CD30075F323 /* piece-1-2-1.png in Resources */,
+				CE48656612A23CD30075F323 /* piece-2-0-0.png in Resources */,
+				CE48656712A23CD30075F323 /* piece-2-0-1.png in Resources */,
+				CE48656812A23CD30075F323 /* piece-2-1-0.png in Resources */,
+				CE48656912A23CD30075F323 /* piece-2-1-1.png in Resources */,
+				CE48656A12A23CD30075F323 /* piece-2-2-0.png in Resources */,
+				CE48656B12A23CD30075F323 /* piece-2-2-1.png in Resources */,
+				CE48656C12A23CD30075F323 /* progress-1.png in Resources */,
+				CE48656D12A23CD30075F323 /* progress-10.png in Resources */,
+				CE48656E12A23CD30075F323 /* progress-11.png in Resources */,
+				CE48656F12A23CD30075F323 /* progress-12.png in Resources */,
+				CE48657012A23CD30075F323 /* progress-13.png in Resources */,
+				CE48657112A23CD30075F323 /* progress-14.png in Resources */,
+				CE48657212A23CD30075F323 /* progress-15.png in Resources */,
+				CE48657312A23CD30075F323 /* progress-2.png in Resources */,
+				CE48657412A23CD30075F323 /* progress-3.png in Resources */,
+				CE48657512A23CD30075F323 /* progress-4.png in Resources */,
+				CE48657612A23CD30075F323 /* progress-5.png in Resources */,
+				CE48657712A23CD30075F323 /* progress-6.png in Resources */,
+				CE48657812A23CD30075F323 /* progress-7.png in Resources */,
+				CE48657912A23CD30075F323 /* progress-8.png in Resources */,
+				CE48657A12A23CD30075F323 /* progress-9.png in Resources */,
+				CE48657B12A23CD30075F323 /* tap-to-start.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* FenmoAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* FenmoViewController.m in Sources */,
+				CE48658212A23D490075F323 /* FenmoGame.m in Sources */,
+				CE48659012A23DF10075F323 /* FenmoView.m in Sources */,
+				CE48659512A23E2B0075F323 /* FenmoTimerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Fei Yang (BBW2JWN94A)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Fenmo_Prefix.pch;
+				INFOPLIST_FILE = "Fenmo-Info.plist";
+				PRODUCT_NAME = Fenmo;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CF7464F1-8B7E-40A6-875F-3F7E7A1719EE";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Fenmo_Prefix.pch;
+				INFOPLIST_FILE = "Fenmo-Info.plist";
+				PRODUCT_NAME = Fenmo;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Fenmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Fenmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
